@@ -26,11 +26,29 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        ld: layer_dance {
-            label = "layer_dance";
+        ld0: layer_dance_0 {
+            label = "layer_dance_0";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
-            bindings = <&to>, <&to>, <&to>;
+            bindings = <&to SYMBOLS>, <&to MOVEMENT>, <&to CONFIG>;
+        };
+        ld1: layer_dance_1 {
+            label = "layer_dance_0";
+            compatible = "zmk,behavior-tap-dance";
+            tapping-term-ms = <200>;
+            bindings = <&to DEFAULT>, <&to MOVEMENT>, <&to CONFIG>;
+        };
+        ld2: layer_dance_2 {
+            label = "layer_dance_0";
+            compatible = "zmk,behavior-tap-dance";
+            tapping-term-ms = <200>;
+            bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to CONFIG>;
+        };
+        ld3: layer_dance_3 {
+            label = "layer_dance_0";
+            compatible = "zmk,behavior-tap-dance";
+            tapping-term-ms = <200>;
+            bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to MOVEMENT>;
         };
     };
 
@@ -48,8 +66,8 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,       │  .       │  /       │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp SPACE  &kp BSPC       &ld SYMBOLS MOVEMENT CONFIG &ht ENTER TAB
-        //                                ╰──────────┴──────────╯   ╰──────────┴──────────╯
+                                             &kp SPACE  &kp BSPC       &ld0        &ht ENTER TAB
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
@@ -65,7 +83,7 @@
         //│  &       │  "       │   '      │  <       │  >       │   │  {       │  }       │  _       │  \       │  |       │
             &kp AMPS   &kp DQT     &ht SQT GRAVE &kp LT &kp GT         &kp LBRC   &kp RBRC   &kp UNDER  &kp BSLH     &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld DEFAULT MOVEMENT CONFIG &trans
+                                             &trans     &trans         &ld1       &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -82,7 +100,7 @@
         //│          │          │          │          │  PGDN    │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &kp PG_DN      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld DEFAULT SYMBOLS CONFIG &trans
+                                             &trans     &trans         &ld2       &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -99,7 +117,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld DEFAULT SYMBOLS MOVEMENT &trans
+                                             &trans     &trans         &ld3       &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

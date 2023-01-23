@@ -30,7 +30,6 @@
             label = "layer_dance";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
-            #binding-cells = <0>;
             bindings = <&mo SYMBOLS>, <&mo MOVEMENT>, <&mo CONFIG>;
         };
     };

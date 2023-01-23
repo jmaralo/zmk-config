@@ -70,7 +70,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,       │  .       │  /       │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp SPACE  &kp BSPC       &ld0        &ht TAB ENTER
+                                             &kp BSPC   &kp SPACE      &ht TAB ENTER &ld0        
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -87,7 +87,7 @@
         //│  &       │  "       │   '      │  <       │  >       │   │  {       │  }       │  _       │  \       │  |       │
             &kp AMPS   &kp DQT     &ht GRAVE SQT &kp LT &kp GT         &kp LBRC   &kp RBRC   &kp UNDER  &kp BSLH     &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld1       &trans
+                                             &trans     &trans         &trans     &ld1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -104,7 +104,7 @@
         //│          │          │          │          │  PGDN    │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &kp PG_DN      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld2       &trans
+                                             &trans     &trans         &trans       &ld2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -121,7 +121,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &ld3       &trans
+                                             &trans     &trans         &trans       &ld3
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

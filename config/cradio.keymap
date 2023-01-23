@@ -98,8 +98,8 @@
         //│  F1      │  F2      │  F3      │  F4      │  F5      │   │  F6      │  F7      │  F8      │  F9      │  F10     │
             &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  END     │  HOME    │  INS     │  DEL     │  PGUP    │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │          │
-            &kp END    &kp HOME   &kp INS    &kp DEL    &kp PG_UP      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
+        //│  END     │  HOME    │  INS     │  DEL     │  PGUP    │   │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ESC     │
+            &kp END    &kp HOME   &kp INS    &kp DEL    &kp PG_UP      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ESC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │  PGDN    │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &kp PG_DN      &trans     &trans     &trans     &trans     &trans

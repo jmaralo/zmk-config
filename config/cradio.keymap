@@ -63,7 +63,7 @@
             &kp EQUAL  &kp MINUS  &kp PLUS   &kp LPAR   &kp RPAR       &kp LBKT   &kp RBKT   &kp ASTRK  &kp FSLH   &kp EXCL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  &       │  "       │   '      │  <       │  >       │   │  {       │  }       │  _       │  \       │  |       │
-            &kp AMPS   &kp DQT     &ht SQT GRAVE &kp LT &kp GT         &kp LBRC   &kc RBRC   &kp UNDER  &kp BSLH     &kp PIPE
+            &kp AMPS   &kp DQT     &ht SQT GRAVE &kp LT &kp GT         &kp LBRC   &kp RBRC   &kp UNDER  &kp BSLH     &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &ld DEFAULT MOVEMENT CONFIG &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯

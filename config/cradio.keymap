@@ -33,19 +33,19 @@
             bindings = <&to SYMBOLS>, <&to MOVEMENT>, <&to CONFIG>;
         };
         ld1: layer_dance_1 {
-            label = "layer_dance_0";
+            label = "layer_dance_1";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             bindings = <&to DEFAULT>, <&to MOVEMENT>, <&to CONFIG>;
         };
         ld2: layer_dance_2 {
-            label = "layer_dance_0";
+            label = "layer_dance_2";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to CONFIG>;
         };
         ld3: layer_dance_3 {
-            label = "layer_dance_0";
+            label = "layer_dance_3";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
             bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to MOVEMENT>;

@@ -30,28 +30,7 @@
             label = "layer_dance_0";
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
-            bindings = <&to SYMBOLS>, <&to MOVEMENT>, <&to CONFIG>;
-            #binding-cells = <0>;
-        };
-        ld1: layer_dance_1 {
-            label = "layer_dance_1";
-            compatible = "zmk,behavior-tap-dance";
-            tapping-term-ms = <200>;
-            bindings = <&to DEFAULT>, <&to MOVEMENT>, <&to CONFIG>;
-            #binding-cells = <0>;
-        };
-        ld2: layer_dance_2 {
-            label = "layer_dance_2";
-            compatible = "zmk,behavior-tap-dance";
-            tapping-term-ms = <200>;
-            bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to CONFIG>;
-            #binding-cells = <0>;
-        };
-        ld3: layer_dance_3 {
-            label = "layer_dance_3";
-            compatible = "zmk,behavior-tap-dance";
-            tapping-term-ms = <200>;
-            bindings = <&to DEFAULT>, <&to SYMBOLS>, <&to MOVEMENT>;
+            bindings = <&mo SYMBOLS>, <&mo MOVEMENT>, <&mo CONFIG>;
             #binding-cells = <0>;
         };
     };
@@ -87,7 +66,7 @@
         //│  &       │  "       │   '      │  <       │  >       │   │  {       │  }       │  _       │  \       │  |       │
             &kp AMPS   &kp DQT     &ht GRAVE SQT &kp LT &kp GT         &kp LBRC   &kp RBRC   &kp UNDER  &kp BSLH     &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &ld1
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -104,7 +83,7 @@
         //│          │          │          │          │  PGDN    │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &kp PG_DN      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans       &ld2
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -121,7 +100,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans       &ld3
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };

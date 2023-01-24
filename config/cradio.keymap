@@ -29,7 +29,7 @@
         ld0: layer_dance_0 {
             label = "layer_dance_0";
             compatible = "zmk,behavior-tap-dance";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&mo SYMBOLS>, <&mo MOVEMENT>, <&mo CONFIG>;
             #binding-cells = <0>;
         };

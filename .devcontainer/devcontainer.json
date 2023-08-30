@@ -5,13 +5,15 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"features": {
-		"ghcr.io/dhoeric/features/act:1": {}
+		"ghcr.io/dhoeric/features/act:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"github.vscode-github-actions",
-				"spadin.zmk-tools"
+				"spadin.zmk-tools",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
